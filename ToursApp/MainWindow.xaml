@@ -1,0 +1,22 @@
+﻿<Window x:Class="ToursApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToursApp" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Багаж3.png" HorizontalAlignment="Left"/>
+        <TextBlock Text="Header" FontSize="30" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Background="#bae3e8" Panel.ZIndex="-2"/>
+        <Grid Grid.Row="2" Background="#445e93"/>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"/>
+        <Button Content="Back" Name="btnBack" HorizontalAlignment="Right" Click="btnBack_Click"/>
+    </Grid>
+</Window>
