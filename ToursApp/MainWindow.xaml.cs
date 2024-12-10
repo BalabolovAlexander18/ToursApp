@@ -38,7 +38,7 @@ namespace ToursApp
             foreach (var line in fileData)
             {
                 var data  = line.Split('\t');
-
+                //ABOBA
                 var tempTour = new Tour
                 {
                     Name = data[0].Replace("\"", ""),
